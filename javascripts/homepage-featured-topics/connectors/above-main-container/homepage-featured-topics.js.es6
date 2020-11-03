@@ -43,7 +43,7 @@ export default {
           titleElement.innerHTML = settings.title_text;
           component.set("titleElement", titleElement);
 
-          ajax(`/tags/${settings.featured_tag}.json`)
+          ajax(`/tag/${settings.featured_tag}.json`)
             .then(result => {
               // Get posts from tag
               let customFeaturedTopics = [];
